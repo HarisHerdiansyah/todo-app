@@ -1,8 +1,0 @@
-- refactor case dua
-    >> rapihkan kode alltodo.jsx
-
-- tampilkan jam dan hari, dengan moment js di tiap todo
-
-- hapus redux persist, ganti dgn db json server
-
-- gunakan redux saga
