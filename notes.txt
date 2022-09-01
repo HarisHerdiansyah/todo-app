@@ -1,5 +1,5 @@
-- refactoring untuk komponen button
-    >> pindahkan function untuk toggle, edit, delete langsung dispatch di komponen
+- refactor case dua
+    >> rapihkan kode alltodo.jsx
 
 - tampilkan jam dan hari, dengan moment js di tiap todo
 
