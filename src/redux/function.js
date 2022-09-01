@@ -1,4 +1,5 @@
 import * as _condition from "./constant";
+import Swal from "sweetalert2";
 
 function handleZero(stringDate) {
   if (stringDate.length === 1) {
@@ -55,15 +56,19 @@ function handleConditionByDate(date) {
   return resultCondition;
 }
 
-function onDeleteTodo(callback, alert) {
-  callback();
-  alert();
-}
+const DELETE_ALERT = () => {
+  Swal.fire("Tugas dihapus!", "Tugas telah dihapus dari daftar!", "info");
+};
 
-function completeTodo(callback, alert) {
-  callback();
-  alert();
-}
+const COMPLETE_ALERT = (todo) => {
+  todo.isComplete
+    ? Swal.fire(
+        "Tugas dikembalikan!",
+        "Tugas dikembalikan ke daftar tugas, segara selesaikan tugasmu!",
+        "info"
+      )
+    : Swal.fire("Selesai!", "Selamat! tugasmu telah selesai!", "success");
+};
 
 const date = new Date().getUTCDate();
 const day = new Date().getUTCDay();
@@ -72,4 +77,4 @@ const year = new Date().getUTCFullYear();
 
 const locale_date = `${_condition.DAY[day]}, ${date} ${_condition.MONTH[month]} ${year}`;
 
-export { handleConditionByDate, onDeleteTodo, completeTodo, locale_date, day };
+export { handleConditionByDate, DELETE_ALERT, COMPLETE_ALERT, locale_date, day };

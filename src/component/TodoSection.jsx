@@ -8,7 +8,7 @@ function TodoSection({ children, typeCollapse, label, parent }) {
           {label}
         </button>
       </h4>
-      <div className="accordion-collapse collapse" id={typeCollapse} data-bs-parent={parent}>
+      <div className="accordion-collapse collapse show" id={typeCollapse} data-bs-parent={parent}>
         <div className="accordion-body card card-body">
           <ul>{children}</ul>
         </div>

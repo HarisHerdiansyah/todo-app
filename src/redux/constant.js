@@ -1,19 +1,3 @@
-import Swal from "sweetalert2";
-
-export const DELETE_ALERT = () => {
-  Swal.fire("Tugas dihapus!", "Tugas telah dihapus dari daftar!", "info");
-};
-
-export const COMPLETE_ALERT = (todo) => {
-  todo.isComplete
-    ? Swal.fire(
-        "Tugas dikembalikan!",
-        "Tugas dikembalikan ke daftar tugas, segara selesaikan tugasmu!",
-        "info"
-      )
-    : Swal.fire("Selesai!", "Selamat! tugasmu telah selesai!", "success");
-};
-
 export const YESTERDAY = "YESTERDAY";
 export const TODAY = "TODAY";
 export const TOMORROW = "TOMORROW";
