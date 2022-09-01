@@ -4,7 +4,7 @@ function TodoSection({ children, typeCollapse, label, parent }) {
   return (
     <section className="accordion-item shadow">
       <h4 className="accordion-header">
-        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#" + typeCollapse} aria-expanded="true" aria-controls={typeCollapse}>
+        <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={"#" + typeCollapse} aria-expanded="true" aria-controls={typeCollapse}>
           {label}
         </button>
       </h4>

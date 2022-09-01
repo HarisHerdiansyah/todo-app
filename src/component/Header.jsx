@@ -11,7 +11,7 @@ function Header() {
   const navigate = useNavigate();
 
   return (
-    <header className="mt-3">
+    <header className="mt-3 mb-2">
       <Datetime />
       <div className="p-sm-5 px-3 py-5">
         <div className="d-flex align-items-start justify-content-between flex-wrap">
@@ -27,4 +27,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;

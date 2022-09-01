@@ -26,7 +26,7 @@ function CompleteTodo() {
                   activity={todo.activity}
                   status="Selesai"
                   description={todo.description}
-                  date={_fn.locale_date}
+                  date={todo?.date?.join("-")}
                   time={todo.time}
                 />
                 <ButtonSection keyID={todo.id} dataTodos={todo} />
